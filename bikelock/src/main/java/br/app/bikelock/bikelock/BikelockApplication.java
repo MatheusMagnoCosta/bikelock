@@ -9,8 +9,6 @@ public class BikelockApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BikelockApplication.class, args);
-		
-
 	}
 
 }
