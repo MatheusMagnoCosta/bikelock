@@ -1,19 +1,12 @@
-package br.app.bikelock.bikelock.model;
+package br.app.bikelock.bikelock.dto;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-
+import br.app.bikelock.bikelock.model.TipoBicicleta;
+import br.app.bikelock.bikelock.model.TipoQuadro;
 import lombok.Data;
 
-
-@Entity
 @Data
-public class Bicicleta {
-    @Id
-    @Column(name="idBicicleta")
+public class BicicletaDTO {
     private Long id;
-    
     private String nome;
     private String numeroSerie;
     private String tag;
@@ -23,4 +16,5 @@ public class Bicicleta {
     private String cor;
     private TipoQuadro tipoQuadro;
     private String informacoesAdicionais;
+    
 }

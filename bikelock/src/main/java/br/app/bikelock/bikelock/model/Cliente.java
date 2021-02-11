@@ -35,4 +35,12 @@ public class Cliente {
         this.bicicletas = new ArrayList <>();
     }
 
+    public void adicionaBicicleta(Bicicleta bicicleta) {
+        this.bicicletas.add(bicicleta);
+    }
+
+    public void removeBicicleta(Bicicleta bicicleta) {
+        this.bicicletas.remove(bicicleta);
+    }
+
 }
